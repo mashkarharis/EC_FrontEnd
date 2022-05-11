@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+form {
+  margin: 3rem auto 0;
+  width: 24rem;
+}
+form div {
+  width: inherit;
+  margin-bottom: 1rem;
+}
+form label {
+  display: block;
+  color: 'black';
+}
+form input, form select, form textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: inherit;
+  height: 
+  3rem;
+  border-color: #23034f;
+  border: 1;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+form input[type="submit"] {
+  height: 2.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #23034f;
+  cursor: pointer;
+}
+form textarea {
+  height: 5rem;
+}
