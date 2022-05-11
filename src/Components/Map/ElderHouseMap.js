@@ -35,8 +35,7 @@ export function ElderHouseMap({homes}) {
   });
   
   return (
-    // Important! Always set the container height explicitly
-    <div style={{ height: '100vh', width: '100%' }}>
+   <div style={{ height: '85vh', width: '100%' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}

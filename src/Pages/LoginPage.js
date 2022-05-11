@@ -22,7 +22,7 @@ export default function LoginPage({ updateView }) {
         if (response.status == 200) {
           console.log(response.data);
           localStorage.setItem("token", response.data);
-          updateView(<DashboardPage updateView={updateView}/>)
+          updateView(<DashboardPage updateView={updateView} />);
         } else {
           alert("Login Failed");
         }
@@ -32,23 +32,25 @@ export default function LoginPage({ updateView }) {
   });
 
   return (
-    <form ref={form}>
-      <Field
-        label="Username"
-        id="username"
-        name="username"
-        required
-        ftype="text"
-      />
-      <Field
-        label="Password"
-        id="password"
-        name="password"
-        required
-        ftype="password"
-      />
+    <div style={{display:"contents"}}>
+      <form ref={form}>
+        <Field
+          label="Username"
+          id="username"
+          name="username"
+          required
+          ftype="text"
+        />
+        <Field
+          label="Password"
+          id="password"
+          name="password"
+          required
+          ftype="password"
+        />
 
-      <Button type="submit">Log In</Button>
-    </form>
+        <Button type="submit">Log In</Button>
+      </form>
+    </div>
   );
 }

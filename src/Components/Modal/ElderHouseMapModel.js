@@ -11,7 +11,7 @@ export default function ElderHouseMapModel({ show, handleClose,homes }) {
       onHide={handleClose}
       keyboard={false}
     >
-      <div style={{width:"60vw",height:"60vh", alignSelf:"center"}}>
+      <div style={{width:"100vw",height:"85vh", alignSelf:"center"}}>
         <ElderHouseMap homes={homes}/>
         </div>
     </Modal>

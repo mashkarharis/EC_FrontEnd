@@ -36,13 +36,12 @@ function App() {
       style={{ width: "98vw" }}
     >
       <Row noGutters={true}>
-        <Col className="col-2" style={{}}>
+        <Col style={{maxWidth:"100px"}}>
           <Router>
             <SideBarComponent updateView={updateView} />
           </Router>
         </Col>
         <Col
-          className="col-10"
           style={{
             paddingTop: "70px",
             paddingBottom: "70px",
@@ -51,7 +50,7 @@ function App() {
             overflowX: "hidden",
           }}
         >
-          <div>{view}</div>
+          {view}
         </Col>
       </Row>
     </Container>
