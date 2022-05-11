@@ -8,6 +8,7 @@
     "cdbreact": "^1.5.1",
     "google-map-react": "^2.1.10",
     "google-maps-react": "^2.0.6",
+    "md5": "^2.3.0",
     "react": "^16.14.0",
     "react-bootstrap": "^1.6.4",
     "react-cool-form": "^0.4.1",
@@ -19,6 +20,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "begin": "react-scripts start",
     "start": "node --max_old_space_size=2048 node_modules/.bin/react-scripts start",
     "build": "node --max_old_space_size=2048 node_modules/.bin/react-scripts build",
     "test": "react-scripts test",

@@ -1,4 +1,5 @@
 import axios from "axios";
+import md5 from "md5";
 
 export default class CareTakerService {
   static get() {
@@ -39,7 +40,7 @@ export default class CareTakerService {
       address: data.address,
       phone: data.phone,
       email: data.email,
-      password: data.password,
+      password: md5(data.password),
     };
       return axios.post("/web/private/caretaker/add", body, {
         headers: {
