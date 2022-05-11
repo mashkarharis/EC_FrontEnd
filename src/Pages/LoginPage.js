@@ -33,7 +33,7 @@ export default function LoginPage({ updateView }) {
 
   return (
     <div style={{display:"contents"}}>
-      <form ref={form}>
+      <form style={{width:"fit-content"}} ref={form}>
         <Field
           label="Username"
           id="username"
