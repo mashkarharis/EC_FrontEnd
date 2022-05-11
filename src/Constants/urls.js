@@ -1,5 +1,5 @@
 export default class URLS{
 
-    static resturl="http://localhost:8080";//"https://ecbackend3241.herokuapp.com";
+    static resturl="https://ecbackend3241.herokuapp.com";//"http://localhost:8080";
 
 }
