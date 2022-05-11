@@ -52,6 +52,7 @@ export default function EldersPage({updateView}) {
                   address: "",
                   phone: "",
                   mac: "",
+                  image:"https://www.collinsdictionary.com/images/full/tree_267376982.jpg"
                 }}
                 editableId={true}
                 backUI={<EldersPage updateView={updateView} />}

@@ -24,6 +24,7 @@ export default class ElderService {
       address: data.address,
       phone: data.phone,
       mac:data.mac,
+      image:data.image
     };
     return axios.post("/web/private/elder/update", body, {
       headers: {
@@ -42,6 +43,7 @@ export default class ElderService {
       address: data.address,
       phone: data.phone,
       mac:data.mac,
+      image:data.image
     };
     return axios.post("/web/private/elder/add", body, {
       headers: {

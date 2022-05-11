@@ -200,6 +200,14 @@ export default function ElderModal({
               name="mac"
               ftype="text"
             />
+            <Field
+              initValue={data.image}
+              editable={false}
+              label="Image Url"
+              id="image"
+              name="image"
+              ftype="text"
+            />
 
             <input type="submit" />
           </form>
