@@ -4,6 +4,7 @@ import uuid from "react-uuid";
 import ElderService from "../../APIServices/ElderService";
 import EldersPage from "../../Pages/EldersPage";
 import ElderModal from "../Modal/ElderModal";
+import ReactRoundedImage from "react-rounded-image";
 
 export default function EldersTable({ updateView, homedata }) {
   const [elders, setElders] = useState([]);
@@ -21,7 +22,7 @@ export default function EldersTable({ updateView, homedata }) {
     <Table striped bordered hover responsive>
       <thead>
         <tr>
-        <th>Image</th>
+          <th>Image</th>
           <th>NIC</th>
           <th>Name</th>
           <th>Init. Address</th>
@@ -31,14 +32,20 @@ export default function EldersTable({ updateView, homedata }) {
           <th>Device MAC</th>
           <th>Edit</th>
           <th>Delete</th>
-          
         </tr>
       </thead>
       <tbody>
         {elders.map((data) => {
           return (
             <tr key={uuid()}>
-              <td>{data.image}</td>
+              <td>
+                <ReactRoundedImage
+                  imageWidth="60"
+                  imageHeight="60"
+                  roundedSize="0"
+                  image={data.image.lengnth>0?data.image:"https://www.collinsdictionary.com/images/full/tree_267376982.jpg"}
+                />
+              </td>
               <td>{data.nic}</td>
               <td>{data.name}</td>
               <td>{data.address}</td>
@@ -68,7 +75,7 @@ export default function EldersTable({ updateView, homedata }) {
                           address: data.address,
                           phone: data.phone,
                           mac: data.mac,
-                          image:data.image
+                          image: data.image,
                         }}
                         editableId={false}
                         backUI={<EldersPage updateView={updateView} />}
