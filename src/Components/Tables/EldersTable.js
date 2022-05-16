@@ -43,7 +43,7 @@ export default function EldersTable({ updateView, homedata }) {
                   imageWidth="60"
                   imageHeight="60"
                   roundedSize="0"
-                  image={data.image.lengnth>0?data.image:"https://www.collinsdictionary.com/images/full/tree_267376982.jpg"}
+                  image={data.image.length>0?data.image:"https://www.collinsdictionary.com/images/full/tree_267376982.jpg"}
                 />
               </td>
               <td>{data.nic}</td>
